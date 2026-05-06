@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Previsão do tempo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="clima-page">
+
+<header>
+  <nav class="navbar">
+    <h1>Daily Check</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="temperatura.html">Temperatura</a></li>
+      <li><a href="tarefas.html">Tarefas</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+    <div class="caixa-maior">
+
+        <div class="topo">
+            <input class="input-cidade" placeholder="Digite a cidade">
+            
+            <button class="botao-busca" onclick="cliquenoBotao()">
+                <img class="img-busca" src="https://www.svgrepo.com/show/488200/find.svg">
+            </button>
+        </div>
+
+        <div class="caixa-media">
+            <h2 class="cidade">Tempo</h2>
+            <p class="temp">--°C</p>
+
+            <div class="caixa-menor">
+                <img class="img-previsao" src="">
+                <p class="texto-previsao"></p>
+            </div>
+
+            <p class="umidade"></p>
+        </div>
+
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

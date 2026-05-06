@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar">
+    <h1>Daily Check</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="temperatura.html">Temperatura</a></li>
+      <li><a href="tarefas.html">Tarefas</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+
+  <button class="btn" onclick="abrirModal()">+ Nova tarefa</button>
+
+</main>
+
+
+<div id="modal" class="modal">
+  <div class="modal-box">
+
+    <span class="fechar" onclick="fecharModal()">×</span>
+
+    <h3>Nova tarefa</h3>
+
+    <label>Nome:</label>
+    <input id="nome" type="text">
+
+    <label>Data início:</label>
+    <input type="date" id="inicio">
+
+    <label>Data fim:</label>
+    <input type="date" id="fim">
+
+    <label>Descrição:</label>
+    <textarea id="descricao"></textarea>
+    
+    <label>Imagem:</label>
+    <input type="text" id="imagem" placeholder="URL da imagem">
+
+    <button class="btn" onclick="salvarTarefa()">Salvar</button>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

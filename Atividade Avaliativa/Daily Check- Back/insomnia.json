@@ -1,0 +1,103 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2026-04-29T14:39:43.225Z",
+  "__export_source": "backend-aula",
+  "resources": [
+    {
+      "_id": "wrk_backend",
+      "_type": "workspace",
+      "name": "Backend Aula"
+    },
+    {
+      "_id": "fld_Daily Check- Back",
+      "_type": "request_group",
+      "parentId": "wrk_backend",
+      "name": "Daily Check- Back"
+    },
+    {
+      "_id": "fld_Tarefa",
+      "_type": "request_group",
+      "parentId": "fld_Daily Check- Back",
+      "name": "Tarefa"
+    },
+    {
+      "_id": "req_Tarefa_GET_ALL",
+      "_type": "request",
+      "parentId": "fld_Tarefa",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Listar",
+      "method": "GET",
+      "url": "http://localhost:3000/tarefa/listar"
+    },
+    {
+      "_id": "req_Tarefa_GET_ID",
+      "_type": "request",
+      "parentId": "fld_Tarefa",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Buscar",
+      "method": "GET",
+      "url": "http://localhost:3000/tarefa/buscar/:id"
+    },
+    {
+      "_id": "req_Tarefa_POST",
+      "_type": "request",
+      "parentId": "fld_Tarefa",
+      "name": "Cadastrar",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "method": "POST",
+      "url": "http://localhost:3000/tarefa/cadastrar",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"string\",\n  \"descricao\": \"string\",\n  \"dataInicio\": \"2026-04-29T14:39:43.216Z\",\n  \"dataFim\": \"2026-04-29T14:39:43.224Z\",\n  \"imagem\": \"string\"\n}"
+      }
+    },
+    {
+      "_id": "req_Tarefa_PUT",
+      "_type": "request",
+      "parentId": "fld_Tarefa",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Atualizar",
+      "method": "PUT",
+      "url": "http://localhost:3000/tarefa/atualizar/:id",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"string\",\n  \"descricao\": \"string\",\n  \"dataInicio\": \"2026-04-29T14:39:43.216Z\",\n  \"dataFim\": \"2026-04-29T14:39:43.224Z\",\n  \"imagem\": \"string\"\n}"
+      }
+    },
+    {
+      "_id": "req_Tarefa_DELETE",
+      "_type": "request",
+      "parentId": "fld_Tarefa",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Excluir",
+      "method": "DELETE",
+      "url": "http://localhost:3000/tarefa/excluir/:id"
+    }
+  ]
+}
